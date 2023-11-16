@@ -45,8 +45,8 @@ class TaskTest {
 
     @Test
     public void PositiveEpicMatches() {
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
-        Epic epic = new Epic (55, subtasks);
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
+        Epic epic = new Epic(55, subtasks);
 
 
         boolean actual = epic.matches("Молоко");
@@ -57,8 +57,8 @@ class TaskTest {
 
     @Test
     public void NegativeEpicMatches() {
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
-        Epic epic = new Epic (55, subtasks);
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
+        Epic epic = new Epic(55, subtasks);
 
 
         boolean actual = epic.matches("Дыня");
@@ -148,15 +148,6 @@ class TaskTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    public void TaskTest() {
-        Task Task = new Task(555);
-
-
-        boolean actual = equals("Object");
-        boolean expected = false;
-
-        Assertions.assertEquals(expected, actual);
-    }
+}
 
 
